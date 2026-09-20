@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>LOGINPAGE.ZOROGRAM</title>
+    <style>
+      
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      
+      
+      body{
+        background-color: whitesmoke;
+      }
+      
+      h1{
+        font-style: italic;
+      }
+      
+      header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .sub_header{
+        display: flex;
+        gap: 10px;
+      }
+      
+      article{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+      }
+      
+      .login_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        border: 1px solid;
+        border-radius: 20px;
+        background-color: white;
+        border-color: white;
+      }
+      
+      input{
+        padding: 10px;
+        width: 20em;
+        outline: none;
+      }
+      
+      button{
+        background-color: blue;
+        color: white;
+        border-width: 0px;
+        padding: 10px;
+        width: 20em;
+      }
+      
+      button:active{
+        background-color: darkblue;
+      }
+      
+      a{
+        text-decoration: none;
+      }
+      
+    </style>
+  </head>
+  <body>
+    
+    <header>
+      <h1>ZOROGRAM</h1>
+      <div class="sub_header">
+        <p>•Learn</p>
+        <p>•Build</p>
+        <p>•Connect</p>
+      </div>
+    </header>
+    
+    <section>
+      <article>
+        <div class="login_container">
+          <h1>Welcome Back</h1>
+          <input id="username" type="text" placeholder="Username" required>
+          
+          <input id="password" type="password" placeholder="Password"
+          required>
+          
+          <a href="">Forgot password?</a>
+          
+          <button id="login" type="submit">
+            Login
+          </button>
+          
+          <p>Don't have an account?</p>
+          
+          <a href="Signup.html">Signup</a>
+          
+        </div>
+      </article>
+    </section>
+    
+    <script src="Login.js"></script>
+  </body>
+</html>

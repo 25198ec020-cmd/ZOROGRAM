@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SEARCHPAGE.ZOROGRAM</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    
+    body{
+      background-color: whitesmoke;
+    }
+    
+    a{
+      text-decoration: none;
+      color: blue;
+    }
+    
+    header{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+      background-color: white;
+    }
+    
+    .sub_head{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    
+    .search_bar{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+      
+    }
+    
+    input{
+      background-color: white;
+      border-width: 0;
+      padding: 10px;
+      width: 100%;
+      outline: none;
+    }
+    
+    .profile_pic{
+      border: 1px solid;
+      width: 50px;
+      height: 50px;
+      border-radius: 2em;
+    }
+    
+    .users{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 10px;
+      padding: 10px;
+      background-color: white;
+      border-radius: 10px;
+    }
+    
+    .user{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .user_profile{
+      display: flex;
+      gap: 10px;
+    }
+    
+    button{
+      background-color: blue;
+      color: white;
+      border-width: 0;
+      padding: 5px;
+    }
+    
+    button:active{
+      background-color: darkblue;
+    }
+    
+    .message{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  
+  <header>
+    <h1>ZOROGRAM</h1>
+    <div class="sub_head">
+      <a href="home.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="Create_post.html">Create</a>
+      <a href="search_page.html">Search</a>
+      <a href="">Logout</a>
+    </div>
+  </header>
+  
+  <section>
+    <article>
+      <div class="search_bar">
+        <input type="search" id="search" placeholder="🔍 users or posts...">
+      </div>
+    </article>
+    
+    <article id="search_results">
+    </article>
+    
+  </section>
+  
+  <script src="search_page.js"></script>
+  
+</body>
+
+</html>

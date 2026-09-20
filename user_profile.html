@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    
+    body{
+      background-color: whitesmoke;
+    }
+    
+    a{
+      text-decoration: none;
+      color: blue;
+    }
+    
+    header{
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      gap: 10px;
+      background-color: white;
+    }
+    
+    .sub_head{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    
+    .user_profile{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 15px;
+      margin: 10px;
+      background-color: white;
+      border-radius: 10px;
+    }
+    
+    .profile{
+      display: flex;
+      gap: 10px;
+    }
+    
+    .profile_pic{
+      padding: 10px;
+      border: 1px solid;
+      height: 100px;
+      width: 100px;
+      border-radius: 5em;
+    }
+    
+    .bio{
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    
+    .influence{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    
+    .sub_influence{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .navigation{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: white;
+      margin: 10px;
+      padding: 5px;
+    }
+    
+    button{
+      border: 1px solid;
+      background-color: white;
+      border-color: white;
+      padding: 5px;
+      font-size: 1em;
+    }
+    
+    button:hover{
+      border-bottom-color: purple;
+      color: purple;
+    }
+    
+    .post_profile_pic{
+      padding: 10px;
+      border: 1px solid;
+      width: 50px;
+      height: 50px;
+      border-radius: 2em;
+    }
+    
+    .user_posts{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
+      background-color: white;
+    }
+    
+    .post_profile{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .buttons{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+  </style>
+</head>
+
+<body>
+  
+  <header>
+    <h1>ZOROGRAM</h1>
+    <div class="sub_head">
+      <a href="home.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="Create_post.html">Create</a>
+      <a href="search_page.html">Search</a>
+      <a href="">Logout</a>
+    </div>
+  </header>
+  
+  <section>
+    <article>
+      <div class="user_profile">
+        <div class="profile">
+          <div class="profile_pic"></div>
+          <div class="bio">
+            <h2 id="show_user"></h2>
+            <p id="label"></p>
+            <pre>I like animes</pre>
+          </div>
+        </div>
+        
+        <div class="influence">
+          <div class="sub_influence">
+            <h2 id="post_count"></h3>
+            <p>Posts</p>
+          </div>
+          <div class="sub_influence">
+            <h2>0</h3>
+            <p>Followers</p>
+          </div>
+          <div class="sub_influence">
+            <h2>0</h3>
+            <p>Following</p>
+          </div>
+        </div>
+        
+      <div>
+    </article>
+    
+    <article>
+      <div class="navigation">
+        <button>Posts</button>
+        <button>Likes</button>
+      </div>
+    </article>
+    
+    <article id="show">
+      
+    </article>
+    
+  </section>
+  
+  
+  <script src="user_profile.js"></script>
+  
+</body>
+
+</html>

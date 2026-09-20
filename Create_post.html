@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CREATEPAGE.ZOROGRAM</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    
+    a{
+      text-decoration: none;
+      color: blue;
+    }
+    
+    body{
+      background-color: whitesmoke;
+    }
+    
+    .head{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+      background-color: white;
+    }
+    
+    .sub_head{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    
+    .create_post{
+      display: flex;
+      justify-content: center;
+      left: 0;
+      flex-direction: column;
+      gap: 10px;
+      margin: 10px;
+      padding: 15px;
+      background-color: white;
+    }
+    
+    textarea{
+      width: 435px;
+      height: 200px;
+      padding: 10px;
+      outline: none;
+    }
+    
+    button{
+      width: 440px;
+      padding: 10px;
+      background-color: blue;
+      border-width: 0px;
+      color: white;
+    }
+    
+    button:active{
+      background-color: darkblue;
+    }
+    
+    
+  </style>
+</head>
+
+<body>
+  
+  <header>
+    <div class="head">
+      <h1>ZOROGRAM</h1>
+      <div class="sub_head">
+        <a href="home.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="Create_post.html">Create</a>
+        <a href="search_page.html">Search</a>
+        <a href="">Logout</a>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <section>
+      <article>
+        <div class="create_post">
+          <h2>Create a New Post</h2>
+          <textarea id="user_input" placeholder="what's on your mind?"></textarea>
+          <h4>Add Image(optional)</h4>
+          <input id="file" type="file">
+          <button id="post" type="button">
+            Post
+          </button>
+        </div>
+      </article>
+    </section>
+  </main>
+  
+  <script src="Create_post.js"></script>
+  
+</body>
+
+</html>

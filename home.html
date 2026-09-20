@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>HOMEPAGE.ZOROGRAM</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                
+            }
+            
+            a{
+                text-decoration: none;
+                color: blue;
+                
+            }
+            
+            body{
+                background-color: whitesmoke;
+            }
+            
+            .head{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px;
+                background-color: white;
+            }
+            
+            .sub_head{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+            
+            .create_post{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                border: 2px hidden;
+                
+                background-color: white;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 5px;
+            }
+            
+            .posts{
+                display: flex;
+                flex-direction: column;
+                
+                gap: 10px;
+                background-color: white;
+                border-radius: 5px;
+                margin: 10px;
+                padding: 10px;
+                
+                
+            }
+            
+            .profile_pic{
+                padding: 25px;
+                border: 1px solid;
+                border-radius: 10em;
+                width: 3em;
+            }
+            
+            .profile{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                
+            }
+            
+            .post_content{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                
+            }
+            
+            .button1{
+                display: flex;
+                gap: 10px
+            }
+            
+            .button2{
+                display: flex;
+                gap: 10px
+            }
+            
+            .allbuttons{
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            button{
+                background-color: white;
+                border-width: 0px;
+                font-size: 1em;
+            }
+    
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="head">
+                <h1>ZOROGRAM</h1>
+                <div class="sub_head">
+                    <a href="">Home</a>
+                    <a href="profile.html">Profile</a>
+                    <a href="Create_post.html">Create</a>
+                    <a href="search_page.html">Search</a>
+                    <a href="">Logout</a>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <section id="feed">
+                <!--Tab to edit-->
+                <article>
+                    <div class="create_post">
+                        <h2 id="welcome" ></h2>
+                    </div>
+                </article>
+                
+            </section>
+        </main>
+        
+        <script src="Home.js"></script>
+    </body>
+</html>

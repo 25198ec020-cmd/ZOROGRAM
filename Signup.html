@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>None</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      
+      }
+      
+      h1{
+        font-style: italic;
+      }
+      
+      body{
+        background-color: whitesmoke;
+      }
+      
+      a{
+        text-decoration: none;
+      }
+      
+      header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .sub_header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+      
+      article{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+      }
+      
+      .login_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid;
+        gap: 15px;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: white;
+        border-color: white;
+        
+      }
+      
+      button{
+        width: 14em;
+        padding: 10px;
+        color: white;
+        background-color: blue;
+        border-width: 0px;
+        width: 20em;
+      }
+      
+      button:active{
+        background-color: darkblue;
+      }
+      
+      .inputs{
+        padding: 10px;
+        outline: none;
+        width: 20em;
+        
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    
+    <header>
+      <h1>ZOROGRAM</h1>
+      <div class="sub_header">
+        <p>•Learn</p>
+        <p>•Build</p>
+        <p>•Connect</p>
+      </div>
+    </header>
+    
+    <section>
+      <article>
+        <div class="login_container">
+          <h1>Create Your Account</h1>
+          <input class="inputs" id="username" type="text" placeholder="username">
+          
+          <input class="inputs" id="user_email" type="email" placeholder="Email">
+          
+          <input class="inputs" id="user_password" type="password" placeholder="Password">
+          
+          <input class="inputs" id="confirm_password" type="password" placeholder="Confirm Password">
+          
+          <div>
+            <input id="check_terms" type="checkbox">
+            I agree with terms & conditions
+          </div>
+          
+          <button id="signup" type="button">
+            Create Account
+          </button>
+          <p>OR</p>
+          <a href="">Continue with Google</a>
+          <p>Already have an account? <a href="Login.html">Login</a></p>
+          
+        </div>
+      </article>
+    </section>
+    
+    <script src="signup.js"></script>
+  </body>
+</html>
